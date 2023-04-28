@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(123, 123, 123);
+    text-align: center;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(imagen2.png);
+    opacity: 0.1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+
+.titulo {
+    text-align: center;
+   background-color: rgb(255, 255, 255);
+   display: inline-block;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    border:1px solid black;
+    padding: 5px;
+    font-family: cursive;
+    
+    
+}
+
+.titulo:hover {
+    transform: scale(1.8)
+    
+}
+
+
+
+p {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 10px;  
+    padding: 3px 10px;
+    border: rgb(0, 0, 0) 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    font-family: sans-serif;
+}
+
+
+.contenedor {
+    max-width: 800px; /* Establece un ancho máximo */
+    margin:  auto; /* Centra el contenedor horizontalmente */
+    transition: transform 0.8s ease-in-out;  
+    transition: transform 0.7s ease;
+}
+
+.contenedor:hover {
+    transform: scale(1.4)
+    rotate(-1.5deg)
+}
+
+.imagen1 {
+    transition: transform 0.4s  ease-in-out;
+    width: 300px;
+    z-index: 2;
+    border: rgb(0, 0, 0) 5px outset;
+    padding: 5px;
+    border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+    
+}
+
+.imagen1:hover {
+    transform: scale(1.1)
+    rotate(-1.5deg)
+        
+}
+
+.video {
+    transition: transform 0.3s ease-in-out;
+    padding: 2px 2px;
+  border: rgb(73, 73, 73) 5px dashed;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 400px;
+  
+}
+
+.video:hover {
+    transform: scale(1.1)   
+}
+
+.titulo2 {
+    text-align: center;
+   background-color: rgb(255, 255, 255);
+   display: inline-block;
+    max-width: 100%;
+    border-radius: 10px;
+    animation: zoom-in-out 2s infinite;
+    transform-origin: center;
+    border:1px solid black;
+    padding: 5px;
+    font-family: cursive;
+    
+}
+
+@keyframes zoom-in-out {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+    }
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: end;
+}
+  
